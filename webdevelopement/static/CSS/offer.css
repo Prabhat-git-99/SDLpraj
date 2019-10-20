@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.full_screen{
+    background: url('/static/CSS/img4.jpg') center/cover no-repeat fixed;
+    width: 100%;
+    height: 100vh;
+}
+.con_cls{
+    background:peachpuff;
+}
+h1{
+    text-transform: uppercase;
+}
+.r_box{
+    width: 300px;
+    height: 15vh;
+    border-radius: 100px;
+    background-color:cadetblue;
+}
+.txt{
+    
+    font-size: 20px ;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}

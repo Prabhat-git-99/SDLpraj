@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{% static './CSS/style.css' %}">
+   
+</head>
+<body>
+    <header class="full_screen">
+        <div class="container_box">
+            <div class="form_box">
+                <form action="log_data" method="POST">
+                        {% csrf_token %}
+                    <h3>Username</h3> <input type="text" class="input_box" name="uname">
+                    <h3>Password</h3> <input type="password" class="input_box" name="pass">
+                    <button class="sub_but">submit</button>
+                    </button>
+                </form>
+                <div class="box_check">
+                    <input type="checkbox" class="check"><h2>Remember Me</h2> 
+                   <a href="main.html">Forget Password?</a>
+                  </div>
+                  <h3>If new User? <a href="create.html" class="create_account">Create Account</a></h3>     
+            </div>
+        </div>
+    </header>
+</body>
+</html>

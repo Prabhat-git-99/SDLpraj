@@ -1,0 +1,38 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration form </title>
+    <link rel="stylesheet" href="{% static './CSS/styles.css' %}">
+</head>
+<body>
+  <header class="back_img"><br><br><br><br>
+      <h1 align="center"><i>REGISTRATION FORM</i></h1>
+    <form action="input" method="POST">
+            {% csrf_token %}
+      <div class="con">
+          <div class="form_box">
+      <br><br><br>
+    <h3>Name:<input type="textbox" name="Fname" placeholder="First name" required>
+    <input type="textbox" name="Lname" placeholder="Last name" required></h3><br>
+    <h3>Address:<input type="textarea" placeholder="Enter address" required name="addr"></h3><br>
+    <h3>Contact No:<input type="tel"  placeholder="Enter contact no" required name="contactN"></h3><br>
+    <h3>Email:<input type="email"  placeholder="Enter email" name="mail"></h3><br>
+    <h3>Birth Date:<input type="date" name="dob"></h3><br>
+    <h3>Loan amount:<input type="number" name="loanamt"></h3><br>
+    <h3>Username:<input type="textbox" name="uname" placeholder="Username" required></h3><br>
+    <h3>Password:<input type="password" name="pass" placeholder="Password" required></h3>
+    <br><br><br><br>
+    </div> </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      
+    <br><br><br><br><br><br>
+         <h1 align="center">
+      <button type="submit" width="10px">Submit</button></h1>
+    </form>
+    </header>
+</body>
+</html>
+
+

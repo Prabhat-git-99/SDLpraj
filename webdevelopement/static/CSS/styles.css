@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.back_img{
+    background: url('/static/CSS/img2.jpg') center/cover no-repeat fixed;
+    width: 100%;
+    height:100vh;
+}
+.con{
+    width: 680px;
+    height: 440px;
+    border: 2px transparent black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0,0.7);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.form_box{
+    position: absolute;
+}
+h3{
+    color: white;
+    padding: 5px;
+}
+.bt{
+    top:10%;
+    right:20%;
+    width: 40px;
+    height: 20px;
+}
